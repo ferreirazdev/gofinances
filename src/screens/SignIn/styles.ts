@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
   flex: 1;
@@ -30,7 +30,7 @@ export const SignInTitle = styled.Text`
   color: ${({ theme }) => theme.colors.shape};
   font-size: ${RFValue(16)}px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 80px;
   margin-bottom: 67px;
 `;
 
@@ -41,8 +41,7 @@ export const Footer = styled.View`
 `;
 
 export const FooterWrapper = styled.View`
-  margin-top: ${RFValue(-20)}px;
+  margin-top: ${RFPercentage(-4)}px;
   padding: 0 32px;
-
   justify-content: space-between;
 `;

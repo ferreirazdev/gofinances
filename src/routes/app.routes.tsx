@@ -12,6 +12,7 @@ const { Navigator, Screen } = createBottomTabNavigator();
 
 export function AppRoutes(){
   const theme = useTheme();
+
   return(
     <Navigator
       tabBarOptions={{
@@ -24,7 +25,7 @@ export function AppRoutes(){
         }
       }}
     >
-      <Screen 
+      <Screen
         name="Listagem"
         component={Dashboard}
         options={{
@@ -38,7 +39,7 @@ export function AppRoutes(){
         }}
       />
 
-      <Screen 
+      <Screen
         name="Cadastrar"
         component={Register}
         options={{
@@ -66,5 +67,5 @@ export function AppRoutes(){
         }}
       />
     </Navigator>
-  )
+  );
 }
